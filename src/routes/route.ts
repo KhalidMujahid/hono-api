@@ -3,8 +3,8 @@ import { addData, fetchAll } from "../controllers/user.controller";
 
 const routes = new Hono()
 
-routes.get("/", fetchAll);
+routes.get("/users", fetchAll);
 
-routes.post("/",addData);
+routes.post("/users",addData);
 
 export default routes
